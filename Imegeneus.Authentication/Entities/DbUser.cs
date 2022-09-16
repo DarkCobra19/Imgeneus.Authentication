@@ -1,7 +1,5 @@
-﻿using Imgeneus.Authentication.Enums;
-using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Identity;
 using System.ComponentModel;
-using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Imgeneus.Authentication.Entities
@@ -13,12 +11,6 @@ namespace Imgeneus.Authentication.Entities
         /// Gets or sets the user's current points.
         /// </summary>
         public uint Points { get; set; }
-
-        /// <summary>
-        /// Gets or sets the user current faction.
-        /// </summary>
-        [DefaultValue(Fraction.NotSelected)]
-        public Fraction Faction { get; set; }
 
         /// <summary>
         /// Gets the user's creation time.
