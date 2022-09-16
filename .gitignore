@@ -1,3 +1,4 @@
 /.vs
 /Imegeneus.Authentication/bin
 /Imegeneus.Authentication/obj
+/Imegeneus.Authentication/appsettings.Development.json
