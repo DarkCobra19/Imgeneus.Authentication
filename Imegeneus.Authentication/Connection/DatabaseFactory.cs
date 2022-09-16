@@ -15,11 +15,11 @@ namespace Imgeneus.Authentication.Connection
         {
             var configuration = new ConfigurationBuilder()
                 .SetBasePath(Directory.GetParent(AppContext.BaseDirectory).FullName)
-                .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
+                .AddJsonFile("settings.json", optional: false, reloadOnChange: true)
 #if DEBUG
-                .AddJsonFile($"appsettings.Development.json", optional: true)
+                .AddJsonFile($"settings.Development.json", optional: true)
 #else
-                .AddJsonFile($"appsettings.Release.json", optional: true)
+                .AddJsonFile($"settings.Release.json", optional: true)
 #endif
                 .Build();
 
