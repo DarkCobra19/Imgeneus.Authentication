@@ -6,6 +6,8 @@ namespace Imgeneus.Authentication.Context
 {
     public class UsersContext : IdentityDbContext<DbUser, DbRole, int>, IUsersDatabase
     {
+        public DbSet<DbShopItem> ShopItems { get; set; }
+
         public UsersContext(DbContextOptions<UsersContext> options) : base(options)
         {
 

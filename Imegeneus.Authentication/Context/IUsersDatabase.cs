@@ -11,6 +11,11 @@ namespace Imgeneus.Authentication.Context
         public DbSet<DbUser> Users { get; set; }
 
         /// <summary>
+        /// In-game items, that user can buy.
+        /// </summary>
+        public DbSet<DbShopItem> ShopItems { get; set; }
+
+        /// <summary>
         /// Saves changes to database.
         /// </summary>
         public int SaveChanges();
