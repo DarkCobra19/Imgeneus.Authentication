@@ -11,8 +11,6 @@ namespace Imgeneus.Authentication.Entities
 
         public string? Icon { get; set; }
 
-        public byte Count { get; set; }
-
         public ushort Price { get; set; }
 
         public ShopItemCategory Category { get; set; }
